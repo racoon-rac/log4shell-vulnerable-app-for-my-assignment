@@ -18,6 +18,7 @@ public class MainController {
     //     return "こんにちは、世界！";
     // }
     @GetMapping("/")
+    @ResponseBody
     public String index() {
         return "<html>\n" + "<header><title>Welcome</title></header>\n" +
           "<body>\n" + "Hello world\n" + "</body>\n" + "</html>";
